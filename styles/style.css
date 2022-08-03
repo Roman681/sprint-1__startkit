@@ -80,7 +80,7 @@
   z-index: 1;
 }
 
-.square-pic {
+.header__square-pic {
   display: block;
   width: 586px;
   height: 568px;
@@ -144,8 +144,11 @@
 
 
 .digits {
-  margin: 0;
+  display: flex;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
 
 }
 
@@ -159,7 +162,6 @@
   font-weight: 600;
   color: black;
   line-height: 1.15;
-  padding-top: 100px;
 }
 
 .section-subtitle {
@@ -175,19 +177,228 @@
 }
 
 
-
-
-/** ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.table {
+  display: flex;
+  height: auto;
+  width: 1100px;
+  padding-top: 60px;
+  justify-content: space-evenly;
 }
-*/
 
-/* и элемента с модификатором вида ключ-значение */
+
+.table-heading {
+  display: flex;
+  font-weight: bold;
+  line-height: 1.15;
+  font-size: 24px;
+  padding-bottom: 20px;
+
+}
+
+.table-text {
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 18px;
+  padding-bottom: 20px;
+  display: flex;
+
+}
+
+.table__cell {
+  display: flex;
+  width: 250px;
+}
+
+
+.feynman{
+  height: 890px;
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.feynman-title {
+  display: flex;
+  font-weight: bold;
+  line-height: 1.15;
+  font-size: 120px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  width: 648px;
+  text-align: center;
+  z-index: 2;
+}
+
+.feynman-subtitle {
+  display: flex;
+  font-weight: normal;
+  line-height: 51px;
+  font-size: 36px;
+  margin-top: 70px;
+  z-index: 2;
+}
+
+.feynman_link {
+  display: block;
+  position: absolute;
+  font-weight: normal;
+  line-height: 51px;
+  font-size: 36px;
+  color: #2f80ed;
+  text-decoration: none;
+  flex-direction: column;
+  right: 48px;
+  top: 50%;
+
+ }
+
+.feynman-illustration {
+  display: flex;
+  position: absolute;
+  width: 867px;
+  height: 637px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+
+.kaufman {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  padding-bottom: 90px;
+}
+
+.section-title__theme_dark {
+  margin-top: 90px;
+  display: flex;
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0;
+  width: 60%;
+  justify-content: space-around;
+  z-index: 2;
+
+}
+
+.section-subtitle__theme_dark {
+  display: flex;
+  color: white;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 60%;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+
+.table__theme_dark {
+  display: flex;
+  height: auto;
+  width: 1100px;
+  padding-top: 80px;
+  justify-content: space-evenly;
+  z-index: 2;
+}
+
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-top: 80px;
+  display: flex;
+  height: auto;
+  z-index: 2;
+
+}
+
+
+.table-heading_theme_dark {
+  display: flex;
+  font-weight: bold;
+  line-height: 1.15;
+  font-size: 24px;
+  margin-bottom: 20px;
+  z-index: 2;
+
+
+}
+
+
+.table-text_theme_dark {
+  display: flex;
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 18px;
+  margin-bottom: 20px;
+  z-index: 2;
+
+}
+
+.kaufman-triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
+  right: -210px;
+  top: 0;
+  display: block;
+  width: 877px;
+  height: 877px;
+  background-size: cover;
+
+}
+
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 60px;
+  flex-direction: column;
+}
+
+.columns {
+  display: flex;
+  width: 90%;
+  height: 350px;
+}
+
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+
+.footer_author {
+  color: white;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+
 }
