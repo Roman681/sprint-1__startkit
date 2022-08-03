@@ -371,8 +371,11 @@
 
 .columns {
   display: flex;
-  width: 90%;
   height: 350px;
+  width: 90%;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -401,4 +404,61 @@
   margin-top: 18px;
   margin-bottom: 18px;
 
+}
+
+
+
+.footer__column_content_info {
+  display: block;
+}
+
+
+.footer__column-links {
+  display: block;
+
+}
+
+.footer__column-heading {
+  color: white;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 0;
+  
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer__column-link {
+  font-weight: normal;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+
+
+ul {
+  list-style: none;
+  margin-top: 20px; 
+  margin-bottom: 16px; 
+  padding: 0px; 
+  
+}
+
+li {
+  line-height: 30px;
+}
+
+.footer__column_content_social{
+  display: block;
+}
+
+.img_link {
+  margin-right: 10px;
+  
 }
